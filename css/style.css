@@ -118,6 +118,130 @@ h6 { font-size: 16px; }
 	float: left;
 }
 
+/* degısecek */
+/* Social Links */
+.socialLinks {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	display:flex;
+	margin:0;
+	padding:0;
+  }
+  
+  .socialLinks li {
+	list-style:none;
+	margin:0 5px;
+  }
+  
+  .socialLinks li a .fa {
+	font-size: 40px;
+	color: #262626;
+	line-height:80px;
+	transition: .5s;
+	padding-right: 14px;
+  }
+  
+  .socialLinks li a span {
+	padding:0;
+	margin:0;
+	position:absolute;
+	top: 30px;
+	color: #262626;
+	letter-spacing: 4px;
+	transition: .5s;
+  }
+  
+  .socialLinks li a {
+	text-decoration: none;
+	display:absolute;
+	display:block;
+	width:210px;
+	height:80px;
+	background: #fff;
+	text-align:left;
+	padding-left: 20px;
+	transform: rotate(-30deg) skew(25deg) translate(0,0);
+	transition:.5s;
+	box-shadow: -20px 20px 10px rgba(0,0,0,.5);
+  }
+  .socialLinks li a:before {
+	content: '';
+	position: absolute;
+	top:10px;
+	left:-20px;
+	height:100%;
+	width:20px;
+	background: #b1b1b1;
+	transform: .5s;
+	transform: rotate(0deg) skewY(-45deg);
+  }
+  .socialLinks li a:after {
+	content: '';
+	position: absolute;
+	bottom:-20px;
+	left:-10px;
+	height:20px;
+	width:100%;
+	background: #b1b1b1;
+	transform: .5s;
+	transform: rotate(0deg) skewX(-45deg);
+  }
+  
+  .socialLinks li a:hover {
+	transform: rotate(-30deg) skew(25deg) translate(20px,-15px);
+	box-shadow: -50px 50px 50px rgba(0,0,0,.5);
+  }
+  
+  .socialLinks li:hover .fa {
+	color:#fff;
+  }
+  
+  .socialLinks li:hover span {
+	color:#fff;
+  }
+  
+  .socialLinks li:hover:nth-child(1) a{
+	background: #0a66c2;
+  }
+  .socialLinks li:hover:nth-child(1) a:before{
+	background: #0a66c2;
+  }
+  .socialLinks li:hover:nth-child(1) a:after{
+	background: #0a66c2;
+  }
+  
+  .socialLinks li:hover:nth-child(2) a{
+	background: #00aced;
+  }
+  .socialLinks li:hover:nth-child(2) a:before{
+	background: #097aa5;
+  }
+  .socialLinks li:hover:nth-child(2) a:after{
+	background: #53b9e0;
+  }
+  
+  .socialLinks li:hover:nth-child(3) a{
+	background: #010409;
+  }
+  .socialLinks li:hover:nth-child(3) a:before{
+	background: #010409;
+  }
+  .socialLinks li:hover:nth-child(3) a:after{
+	background: #010409;
+  }
+  
+  .socialLinks li:hover:nth-child(4) a{
+	background: #E1306C;
+  }
+  .socialLinks li:hover:nth-child(4) a:before{
+	background: #E1306C;
+  }
+  .socialLinks li:hover:nth-child(4) a:after{
+	background: #E1306C;
+  }
+/* degısecek */
 #preloader {
     position: fixed;
     left: 0;
@@ -477,7 +601,7 @@ h6 { font-size: 16px; }
 .shane_tm_hero .background{
 	position: absolute;
 	right: 0px;
-	top: 0px;
+	top: 70px;
 	bottom: 0px;
 	width: 50%;
 }
@@ -488,7 +612,7 @@ h6 { font-size: 16px; }
 	bottom: 0px;
 	left: 0px;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: right;
 	background-size: cover;
 }
 .shane_tm_hero[data-style="one"] .background{clip-path: polygon(0% 100%, 21% 0%, 100% 0%, 100% 100%);}
@@ -539,6 +663,12 @@ h6 { font-size: 16px; }
 	float: left;
 	position: relative;
 	overflow:hidden; 
+		margin-left: 4px;
+		background-color: #e54b4b;
+		font-weight: bolder;
+		color: #FFF;
+		padding: 4px;
+	
 }
 .overlay_effect{
 	position: absolute;
@@ -1419,6 +1549,18 @@ body.loaded .overlay_effect:after{
 	clear: both;
 	float: left;
 }
+.shane_tm_partners h3 {
+    display: inline-block;
+    background-color: rgba(0,0,0,.05);
+    text-transform: uppercase;
+    padding: 4px 10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #333;
+    font-family: "Poppins";
+    letter-spacing: 0px;
+    margin-bottom: 15px;
+}
 .shane_tm_partners .partners_inner{
 	width: 100%;
 	height: auto;
@@ -1575,41 +1717,43 @@ body.loaded .overlay_effect:after{
 	float: left;
 	padding: 150px 0px 90px 0px;
 }
-.shane_tm_news .news_list{
+.portfolio_list{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 	padding-top: 90px;
 }
-.shane_tm_news .news_list ul{
+.portfolio_list ul{
 	margin: 0px 0px 0px -50px;
 	list-style-type: none;
 	display: flex;
 	flex-wrap: wrap;
 }
-.shane_tm_news .news_list ul li{
+.portfolio_list ul li{
 	margin: 0px 0px 50px 0px;
 	float: left;
 	width: 33.3333%;
 	padding-left: 50px;
 }
-.shane_tm_news .news_list ul li .list_inner{
+.portfolio_list ul li .list_inner{
 	width: 100%;
 	height: 100%;
 	clear: both;
 	float: left;
 	position: relative;
 }
-.shane_tm_news .news_list ul li .image{
+.portfolio_list ul li .image{
 	position: relative;
 	overflow: hidden;
+	border: 1px solid #eaeaea;
 }
-.shane_tm_news .news_list ul li .image img{
+.portfolio_list ul li .image img{
 	min-width: 100%;
 	opacity: 0;
+	height: 296.66px;
 }
-.shane_tm_news .news_list ul li .image .main{
+.portfolio_list ul li .image .main{
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -1626,18 +1770,26 @@ body.loaded .overlay_effect:after{
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.shane_tm_news .news_list ul li .list_inner .image:hover .main{transform: scale(1.1) rotate(3deg);}
-.shane_tm_news .news_list ul li .details{
+.portfolio_list ul li .list_inner .image:hover .main{transform: scale(1.1) rotate(3deg);}
+.portfolio_list ul li .details{
 	width: 100%;
 	float: left;
 	padding-right: 15px;
 	padding-top: 32px;
 }
-.shane_tm_news .news_list ul li .details .title{margin-bottom: 10px;}
-.shane_tm_news .news_list ul li .details .title a{
+.portfolio_list ul .shane_tm_button a {
+	padding: 5px 20px;
+}
+.portfolio_list ul .shane_tm_button {
+	text-align: center;
+}
+.portfolio_list ul li .details .title{margin-bottom: 10px;}
+
+.portfolio_list ul li .details .title a{
 	text-decoration: none;
-	color: #000;
-	font-size: 18px;
+	color: #313131;
+    width: 296px;
+    font-size: 17px;
 	font-weight: 600;
 	display: inline-block;
 	
@@ -1647,15 +1799,15 @@ body.loaded .overlay_effect:after{
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.shane_tm_news .news_list ul li .details .title a:hover{color: #000;}
-.shane_tm_news .news_list ul li .details .date{
+.portfolio_list ul li .details .title a:hover{color: #000;}
+.portfolio_list ul li .details .date{
 	text-transform: uppercase;
 	font-family: "Poppins";
 	font-size: 12px;
 	color: #767676;
 	font-style: italic;
 }
-.shane_tm_news .news_list ul li .details .date a{
+.portfolio_list ul li .details .date a{
 	text-decoration: none;
 	color: #767676;
 	
@@ -1665,12 +1817,12 @@ body.loaded .overlay_effect:after{
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.shane_tm_news .news_list ul li .details .date a:hover{color: #000;}
-.shane_tm_news .news_list ul li .details .date span{
+.portfolio_list ul li .details .date a:hover{color: #000;}
+.portfolio_list ul li .details .date span{
 	position: relative;
 	margin-left: 11px;
 }
-.shane_tm_news .news_list ul li .details .date span:before{
+.portfolio_list ul li .details .date span:before{
 	position: absolute;
 	content: "";
 	margin-top: 1px;
@@ -2162,7 +2314,7 @@ body.loaded .overlay_effect:after{
 	.shane_tm_testimonials .testimonials_inner{flex-direction: column;}
 	.shane_tm_testimonials .left{padding-right: 0px;width: 100%;margin-bottom: 50px;}
 	.shane_tm_testimonials .right{padding-left: 0px;width: 100%;}
-	.shane_tm_news .news_list ul li{width: 50%;}
+	.portfolio_list ul li{width: 50%;}
 	.shane_tm_talk .text h3{font-size: 50px;}
 	.shane_tm_modalbox .description_wrap{padding: 20px;}
 	.shane_tm_modalbox .box_inner{width: 300px;}
@@ -2182,133 +2334,10 @@ body.loaded .overlay_effect:after{
 	.shane_tm_classic_hero .name_wrap h3{font-size: 50px;}
 }
 @media (max-width: 768px) {
-	.shane_tm_hero .content{padding-right: 0px;width: 100%;}
+	.shane_tm_hero .content{padding-right: 0px;width: 300px;}
 	.shane_tm_portfolio .portfolio_list ul{margin: 0px;}
 	.shane_tm_portfolio .portfolio_list ul li{padding: 0px;width: 100%;}
-	.shane_tm_news .news_list ul{margin: 0px;}
-	.shane_tm_news .news_list ul li{padding: 0px;width: 100%;}
-}
-
-
-/* Social Links */
-.socialLinks {
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%, -50%);
-  display:flex;
-  margin:0;
-  padding:0;
-}
-
-.socialLinks li {
-  list-style:none;
-  margin:0 5px;
-}
-
-.socialLinks li a .fa {
-  font-size: 40px;
-  color: #262626;
-  line-height:80px;
-  transition: .5s;
-  padding-right: 14px;
-}
-
-.socialLinks li a span {
-  padding:0;
-  margin:0;
-  position:absolute;
-  top: 30px;
-  color: #262626;
-  letter-spacing: 4px;
-  transition: .5s;
-}
-
-.socialLinks li a {
-  text-decoration: none;
-  display:absolute;
-  display:block;
-  width:210px;
-  height:80px;
-  background: #fff;
-  text-align:left;
-  padding-left: 20px;
-  transform: rotate(-30deg) skew(25deg) translate(0,0);
-  transition:.5s;
-  box-shadow: -20px 20px 10px rgba(0,0,0,.5);
-}
-.socialLinks li a:before {
-  content: '';
-  position: absolute;
-  top:10px;
-  left:-20px;
-  height:100%;
-  width:20px;
-  background: #b1b1b1;
-  transform: .5s;
-  transform: rotate(0deg) skewY(-45deg);
-}
-.socialLinks li a:after {
-  content: '';
-  position: absolute;
-  bottom:-20px;
-  left:-10px;
-  height:20px;
-  width:100%;
-  background: #b1b1b1;
-  transform: .5s;
-  transform: rotate(0deg) skewX(-45deg);
-}
-
-.socialLinks li a:hover {
-  transform: rotate(-30deg) skew(25deg) translate(20px,-15px);
-  box-shadow: -50px 50px 50px rgba(0,0,0,.5);
-}
-
-.socialLinks li:hover .fa {
-  color:#fff;
-}
-
-.socialLinks li:hover span {
-  color:#fff;
-}
-
-.socialLinks li:hover:nth-child(1) a{
-  background: #0a66c2;
-}
-.socialLinks li:hover:nth-child(1) a:before{
-  background: #0a66c2;
-}
-.socialLinks li:hover:nth-child(1) a:after{
-  background: #0a66c2;
-}
-
-.socialLinks li:hover:nth-child(2) a{
-  background: #00aced;
-}
-.socialLinks li:hover:nth-child(2) a:before{
-  background: #097aa5;
-}
-.socialLinks li:hover:nth-child(2) a:after{
-  background: #53b9e0;
-}
-
-.socialLinks li:hover:nth-child(3) a{
-  background: #010409;
-}
-.socialLinks li:hover:nth-child(3) a:before{
-  background: #010409;
-}
-.socialLinks li:hover:nth-child(3) a:after{
-  background: #010409;
-}
-
-.socialLinks li:hover:nth-child(4) a{
-  background: #E1306C;
-}
-.socialLinks li:hover:nth-child(4) a:before{
-  background: #E1306C;
-}
-.socialLinks li:hover:nth-child(4) a:after{
-  background: #E1306C;
+	.portfolio_list ul{margin: 0px;}
+	.portfolio_list ul li{padding: 0px;width: 100%;}
+	.socialLink ul {transform: scale(0.6);}
 }
