@@ -2339,5 +2339,10 @@ body.loaded .overlay_effect:after{
 	.shane_tm_portfolio .portfolio_list ul li{padding: 0px;width: 100%;}
 	.portfolio_list ul{margin: 0px;}
 	.portfolio_list ul li{padding: 0px;width: 100%;}
-	.socialLink ul {transform: scale(0.6);}
+	.socialLinks ul {transform: scale(0.6);}
+	.socialLinks{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap:20px
+	}
 }
